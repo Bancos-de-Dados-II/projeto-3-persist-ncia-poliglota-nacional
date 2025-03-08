@@ -1,0 +1,47 @@
+.form-register{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 85px;
+    width: 400px;
+    border-radius: 10px;
+    border:1px solid black;
+}
+.title-text-register{
+    margin-top: 60px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 30px;
+}
+.input{
+    margin-left: 29px;
+    width: 300px;
+    margin-bottom: 30px;
+}
+.button-send-register{
+    margin-top: 0px;
+    margin-left:60px ;
+    background-color: brown;
+    border-radius: 12px;
+    height: 40px;
+    width: 100px;
+    color:beige;
+}
+.register-campos{
+    display: flex;
+    flex-direction: column;
+}
+
+.register-text{
+    margin-bottom: 40px;
+    margin-top: 30px;
+    margin-left: 165px;
+}
+.msgError{
+    margin-left: 20px;
+    color: red;
+}
+.buttons-register{
+    display: flex;
+    flex-direction: row;
+}

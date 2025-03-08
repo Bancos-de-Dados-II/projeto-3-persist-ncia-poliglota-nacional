@@ -1,0 +1,17 @@
+.feature-item-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    max-width: 400px;
+    gap: 12px;
+}
+
+.feature-item-container p:first-child {
+    font-weight: 600;
+}
+
+.feature-item-container p:nth-child(2) {
+    line-height: 2.3ch;
+    font-size: .95rem;
+}

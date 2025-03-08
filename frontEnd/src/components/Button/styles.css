@@ -1,0 +1,23 @@
+.button-container {
+    color: #fff;
+    padding: 2px 18px;
+    border-radius: 5px;
+    background-color: #6A1E2E;
+    font-weight: bold;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.button-container:hover {
+    scale: 1.05;
+    transition: .4s;
+}
+
+.link-button {
+    text-decoration: none;
+}

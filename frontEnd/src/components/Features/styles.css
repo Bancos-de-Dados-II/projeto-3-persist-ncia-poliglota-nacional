@@ -1,0 +1,24 @@
+.features-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 90px;
+    color: #fff;
+    background-color: #6A1E2E;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+.features-container > h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.features-itens {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    flex-wrap: wrap;
+}

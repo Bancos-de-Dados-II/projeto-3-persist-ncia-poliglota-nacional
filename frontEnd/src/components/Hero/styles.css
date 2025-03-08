@@ -1,0 +1,26 @@
+.hero-container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url("../../../public/img/hero.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+
+    
+}
+
+.text-hero-content, .titulo-hero {
+    color: #fff;
+}
+
+.text-hero-content > h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.text-hero-content > p {
+    max-width: 400px;
+    line-height: 3.2ch;
+}

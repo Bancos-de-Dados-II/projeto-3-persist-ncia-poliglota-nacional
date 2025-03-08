@@ -1,0 +1,31 @@
+.services-container {
+    color: #fff;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url("../../../public/img/serviceSection.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.services-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.services-container > div {
+    color: #fff;
+    max-width: 450px;
+    line-height: 3ch;
+}
+
+.content-section-services > p:first-child {
+    font-size: .95rem;
+    margin: 0;
+    padding: 0;
+}
+
+.content-section-services > h2 {
+    font-size: 2.5rem;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}

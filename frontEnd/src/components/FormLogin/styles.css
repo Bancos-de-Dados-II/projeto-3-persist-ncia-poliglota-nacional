@@ -1,0 +1,52 @@
+.form-login{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 85px;
+    width: 400px;
+    border-radius: 10px;
+    border:1px solid black;
+}
+.email-text{
+    margin-top: 60px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 30px;
+}
+.email-input{
+    margin-left: 29px;
+    width: 300px;
+    margin-bottom: 30px;
+}
+.password-text{
+    margin-left: 29px;
+    margin: 25px;
+}
+.password-input{
+    margin-left: 29px;
+    margin-right: 25px;
+    margin-bottom: 50px;
+    width: 300px;
+}
+.login-text{
+    margin-bottom: 40px;
+    margin-top: 30px;
+    margin-left: 165px;
+}
+.form-campos{
+    display: flex;
+    flex-direction: column;
+}
+.button-login{
+    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-left:140px ;
+    background-color: brown;
+    border-radius: 12px;
+    height: 40px;
+    width: 100px;
+    color:beige;
+}    
+.redirecionar-cadastro{
+    margin-left: 40px;
+}

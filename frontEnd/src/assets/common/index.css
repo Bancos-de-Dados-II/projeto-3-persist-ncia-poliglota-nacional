@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: "Open Sans", serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/*Estilos gerais*/
+.section-dimensions-default {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.padding-default {
+    padding: 0 80px;
+}

@@ -1,0 +1,88 @@
+.container-contato  {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px;
+    gap: 40px;
+  }
+  
+.container-informacao{
+ 
+    display: flex;
+    flex-direction: column;
+    padding-top: 125px;
+}
+  .formulario-contato {
+    flex: 1;
+    max-width: 600px;
+    color: #898989;
+
+    padding: 15px;
+  }
+  
+  .linha {
+    display: flex;
+    justify-content: space-between;
+    
+}
+  
+  .campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 48%; 
+    gap: 30px;
+  }
+  
+
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #aaa;
+    outline: none;
+    font-size: 16px;
+    background: transparent;
+  }
+  
+  input:focus, textarea:focus {
+    border-bottom: 2px solid #6A1E2E;
+  }
+  
+  .container-info {
+
+    background: linear-gradient(#6A1E2E, #4B3657);
+    color: white;
+    padding: 30px;
+    border-radius: 2px;
+    width: 441px;
+    height: 555px;
+
+
+  }
+  .container-info h2{
+    font-size: 20px;
+  }
+
+  .informacao  {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-top: 15px;
+   
+  }
+
+  
+  .informacao{
+    margin-left: 20px;
+  }
+  
+.botao{
+    display: flex;
+    justify-content: flex-end;
+   
+}
+h1{
+    color: #6A1E2E;
+    padding-bottom: 39px;
+}

@@ -1,0 +1,31 @@
+.generic-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.generic-container > div {
+    max-width: 450px;
+    line-height: 3ch;
+}
+
+.content-section-div > p:first-child {
+    font-size: .95rem;
+    margin: 0;
+    padding: 0;
+}
+
+.content-section-div > p {
+    color: #555;
+}
+
+.content-section-div > button {
+    margin-top: 35px;
+}
+
+.content-section-div > h2 {
+    font-size: 2.5rem;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    color: #6A1E2E;
+}

@@ -1,0 +1,28 @@
+ .login-page-section{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+.lateral-page-section{
+    margin-right: 40% ;
+    width: 400px;
+    height: 719px;
+    background-color: red;
+}
+
+.form-login-page-section{
+    display: flex;
+    height: 500px;
+    width: 400px;
+    margin-top: 100px;
+    margin-right: 60px;
+    margin-left: 0px;
+} 
+.button-back-login{
+    margin-top: 20px
+}
+.img-logo-login{
+    margin-top: 250px;
+    height: 100px;
+    margin-left: 40px;
+}

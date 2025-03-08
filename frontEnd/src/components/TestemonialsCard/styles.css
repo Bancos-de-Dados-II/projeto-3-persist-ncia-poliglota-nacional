@@ -1,0 +1,36 @@
+.testemonials-card-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #eeeeee;
+    border-radius: 5px;
+    padding: 15px 20px;
+    max-width: 450px;
+}
+
+.testemonials-card-section > p {
+    font-size: .9rem;
+    color: #333;
+}
+
+.user-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.user-info > div p {
+    padding: 0;
+    margin: 5px 0;
+}
+
+.date-posted {
+    font-size: .8rem;
+    color: rgb(155, 52, 52);
+}
+
+.user-name {
+    font-weight: 600;
+    font-size: .95rem;
+}
