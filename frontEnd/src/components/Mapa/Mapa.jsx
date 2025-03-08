@@ -8,7 +8,7 @@ import LocationMarker from "../LocalizacaoAtual/index.jsx";
 import CadastraLocalizacao from "../FormCadastraLocalização/index.jsx";
 import BuscaGeocodificada from "../BuscaGeocodificada/index.jsx";
 import UserServices from "../../services/user/UserServices.js";
-import RedisService from "../../services/redis/RedisService.js";
+//import RedisService from "../../services/redis/RedisService.js";
 
 const customIcon = new L.Icon({
   iconUrl: logo,
@@ -20,19 +20,19 @@ const customIcon = new L.Icon({
 
 function Mapa() {
   const userService = new UserServices();
-  const redisService = new RedisService();
+  //const redisService = new RedisService();
 
   const [locais, setLocais] = useState([]);
 
   useEffect(() => {
 
     const runRedis = async () => {
-      const sectionData = await redisService.getDataSection();
+      /*const sectionData = await redisService.getDataSection();
 
       if (!sectionData) {
         alert("Você não está autorizado a acessar essa página, faça o login e tente novamente");
         userService.redirectPage("login");
-      }
+      }*/
     }
 
     axiosApi
