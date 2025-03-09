@@ -7,6 +7,7 @@ import "./styles.css";
 import LocationMarker from "../LocalizacaoAtual/index.jsx";
 import CadastraLocalizacao from "../FormCadastraLocalização/index.jsx";
 import BuscaGeocodificada from "../BuscaGeocodificada/index.jsx";
+import DeletarLocalizacao from "../FormDeletaLocalizacao/index.jsx";
 //import UserServices from "../../services/user/UserServices.js";
 //import RedisService from "../../services/redis/RedisService.js";
 
@@ -115,7 +116,9 @@ function Mapa() {
       <div className="campo-busca">
     
       <BuscaGeocodificada/>
-      <CadastraLocalizacao onSubmit={cadastrarLocalizacao} /></div>
+      <CadastraLocalizacao onSubmit={cadastrarLocalizacao} />
+      <DeletarLocalizacao/>
+      </div>
     </div>
     </div>
   );
