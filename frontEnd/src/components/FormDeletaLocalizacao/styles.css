@@ -1,0 +1,9 @@
+.form-deleta-localizacao{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.form-deleta-localizacao, input {
+    padding-top: 20px;
+}
+

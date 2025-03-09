@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import "../BuscaGeocodificada/styles.css";
-// import { FaSearch } from 'react-icons/fa';
+import "../../assets/padraoBotaoInput.css"
 import axios from 'axios';
 
-
-export default function BuscaGeocodificada({ }) {
+export default function BuscaGeocodificada() {
   const [searchQuery, setSearchQuery] = useState('');
   const [result, setResult] = useState(null);
 
@@ -12,7 +11,7 @@ export default function BuscaGeocodificada({ }) {
     try {
       const response = await axios.get('https://nominatim.openstreetmap.org/search', {
         params: {
-          q: searchQuery, // Busca pelo nome informado no input
+          q: searchQuery,
           format: 'json',
           addressdetails: 1,
           limit: 1,
@@ -20,9 +19,7 @@ export default function BuscaGeocodificada({ }) {
       });
 
       const location = response.data[0];
-      setResult(location); 
-
-      
+      setResult(location);
     } catch (error) {
       console.error('Erro ao buscar localização:', error);
       alert('Erro ao buscar localização.');
@@ -31,19 +28,21 @@ export default function BuscaGeocodificada({ }) {
 
   return (
     <div className='container-busca'>
-      <input
-        className="container-input-busca"
-        type="text"
-        placeholder='Encontre um ponto ReCircular perto de você'
-        value={searchQuery}
-        onChange={(e) => setSearchQuery(e.target.value)} 
-      />
-      <div className="container-botao-busca">
-      <button className='botao-busca' onClick={buscarLocalizacao}>
+    
+      <div className="container-input-botao">
+        <input
+          className="input-padrao"
+          type="text"
+          placeholder='Busque um ReCircular próximo '
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+        />
+        <button className='botao-padrao' onClick={buscarLocalizacao}>
           Buscar
         </button>
       </div>
 
+  
       {result && (
         <div className="resultado-busca">
           <h3>Resultado da Busca:</h3>

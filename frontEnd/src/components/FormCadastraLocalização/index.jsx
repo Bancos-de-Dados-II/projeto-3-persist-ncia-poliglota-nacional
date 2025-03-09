@@ -1,7 +1,8 @@
 import { useState } from "react";
 import axiosApi from "../../services/axios";
+import "../../assets/padraoBotaoinput.css"
 import "../FormCadastraLocalização/styles.css"
-// eslint-disable-next-line react/prop-types
+
 export default function CadastraLocalizacao({ onSubmit }) {
   const [nome, setNome] = useState("");
   const [erro, setErro] = useState("");
@@ -54,14 +55,14 @@ export default function CadastraLocalizacao({ onSubmit }) {
   
       <form onSubmit={handleSubmit}>
         <input
-        className="input-cadastro-localizacao"
+        className="input-padrao"
           type="text"
-          placeholder="Digite o nome do local que deseja cadastrar"
+          placeholder="Cadastre um ponto ReCircular"
           value={nome}
           onChange={(e) => setNome(e.target.value)}
           required
         />
-        <button className="botao-localizacao" type="submit">Cadastrar</button>
+        <button className="botao-padrao" type="submit">Cadastrar</button>
       </form>
       {erro && <p className="erro">{erro}</p>}
     </div>

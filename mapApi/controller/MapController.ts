@@ -29,13 +29,15 @@ export class MapController {
 
   async deletarLocalizacaoPorNome(req: Request, res: Response) {
     const nome = req.params.nome;
+    console.log("Tentando apagar a localização com nome:", nome);
 
     try {
       const resultado = await MapaModel.deleteOne({
         "localizacao.nome": { $regex: new RegExp(nome, 'i') }, // Ignora case sensitive
       });
       if (resultado.deletedCount > 0) {
-        res.json({ message: 'Localização deletada com sucesso' });
+        console.log("Localização deletada com sucesso", req.params);
+        res.json({ message: 'Localização deletada com sucesso', nome });
       } else {
         res.status(404).json({ message: 'Localização não encontrada' });
       }
@@ -73,7 +75,7 @@ export class MapController {
     }
   }
 
-
+//conecatr ao front
   async atualizarLocalizacao(req: Request, res: Response) {
     const nome = req.params.nome;
 
