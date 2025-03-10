@@ -12,8 +12,8 @@ const mapController = new MapController();
 mapRouter.post('/',mapController.criarLocalizacao)
 mapRouter.delete('/:nome', mapController.deletarLocalizacaoPorNome);
 mapRouter.get('/', mapController.buscarLocalizacoes)
-mapRouter.put('/:nome', mapController.buscarLocalizacaoPorNome)
-mapRouter.patch("/:nome", mapController.atualizarLocalizacao)
+mapRouter.put('/:nome', mapController.atualizarLocalizacao)
+
 
 //mapRouter.get("/:nome", mapController.buscarPorNoomeLocalizacao)
 

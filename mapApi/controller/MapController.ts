@@ -75,24 +75,49 @@ export class MapController {
     }
   }
 
-//conecatr ao front
-  async atualizarLocalizacao(req: Request, res: Response) {
-    const nome = req.params.nome;
 
-    try {
-      const resultado = await MapaModel.updateOne(
-        { "localizacao.nome": nome },
-        req.body
-      );
+async atualizarLocalizacao(req: Request, res: Response) {
+  const id = req.params.nome;
+  const { localizacao } = req.body; 
+ 
 
-      if (resultado.modifiedCount > 0) {
-        res.json({ message: "Localização atualizada com sucesso" });
-      } else {
-        res.status(404).json({ message: "Localização não encontrada" });
-      }
-    } catch (error) {
-      console.error("Erro ao atualizar a localização:", error);
-      res.status(500).json({ error: "Erro ao atualizar a localização" });
-    }
+  if (!localizacao || !Array.isArray(localizacao.coordinates) || localizacao.coordinates.length !== 2) {
+    res.status(400).json({ message: "Formato inválido. Envie { localizacao: { coordinates: [lon, lat] } }" });
+    return;
   }
+
+  const [lon, lat] = localizacao.coordinates;
+  const nome= localizacao.nome;
+
+  if (typeof lat !== 'number' || typeof lon !== 'number') {
+    res.status(400).json({ message: "Latitude e Longitude devem ser números válidos" });
+    return;
+  }
+
+  //VERIFICANDO SE RECEBEU O ANTES CORRETAMENTE
+  const localizacaoAntes = await MapaModel.findOne({ _id: id });
+  console.log("Antes", localizacaoAntes)
+
+  try {
+    const resultado = await MapaModel.updateOne(
+      { _id: id }, 
+      { $set: {
+        "localizacao.nome": nome,
+         "localizacao.coordinates": [lon, lat] } }
+    );
+
+    //verificiando os dados depois da atualização
+    const localizacaoDepois = await MapaModel.findOne({ _id: id });
+    console.log("Depois", localizacaoDepois)
+
+    if (resultado.modifiedCount > 0) {
+      res.json({ message: "Localização atualizada com sucesso" });
+    } else {
+      res.status(404).json({ message: "Localização não encontrada" });
+    }
+  } catch (error) {
+    console.error("Erro ao atualizar a localização:", error);
+    res.status(500).json({ error: "Erro ao atualizar a localização" });
+  }
+}
 }

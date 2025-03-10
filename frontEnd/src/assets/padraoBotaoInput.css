@@ -3,10 +3,12 @@
     flex-grow: 1;
     padding: 10px;
     font-size: 16px;
+   
     border: 1px solid #ccc;
     border-radius: 5px;
     width: 100%;
-    max-width: 300px; 
+    max-width: auto;
+   
 }
 
 
@@ -16,17 +18,20 @@
     cursor: pointer;
     white-space: nowrap;
     border: none;
+
     border-radius: 5px;
     background-color: #6A1E2E;
     color: #fff;
-    width: 120px; /* Ajuste conforme necessário */
+    width: auto;
     text-align: center;
 }
 
+
 .botao-padrao:hover {
-    transform: scale(1.1);
+    transform: scale(1.04);
     cursor: pointer;
 }
+
 
 .container-form {
     display: flex;
