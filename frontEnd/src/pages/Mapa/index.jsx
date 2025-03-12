@@ -3,7 +3,6 @@ import Mapa from "../../components/Mapa/Mapa";
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 
-import "../Mapa/styles.css"
 
 function PaginaMapa() {
   return (

@@ -2,12 +2,15 @@
     display: flex;
     flex-direction: row;
     height: 100%;
+  
 }
 .lateral-page-section{
     margin-right: 40% ;
     width: 400px;
     height: 719px;
-    background-color: red;
+
+  
+    
 }
 
 .form-login-page-section{
@@ -22,7 +25,8 @@
     margin-top: 20px
 }
 .img-logo-login{
-    margin-top: 250px;
-    height: 100px;
-    margin-left: 40px;
+    margin-top: 200px;
+    margin-left: 50px;
+    height: 40%;
+  
 }

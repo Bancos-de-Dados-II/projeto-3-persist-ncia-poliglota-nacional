@@ -26,7 +26,7 @@ export default function FormRegister(){
     return (
         <div className="form-register">
             <div className="register-text">
-                <label>Cadastro</label>
+                <label><strong>Cadastro</strong></label>
             </div>
             <div className="register-campos">
                 <form onSubmit={ handleSubmit(onSubmit)}>
@@ -63,7 +63,7 @@ export default function FormRegister(){
                     <br/>
                     <div className="buttons-register">
                         <Link to ="/">
-                            <button className="button-send-register">Cancelar</button>
+                            <button className="button-send-register-cancelar">Cancelar</button>
                         </Link>
                         
                         <button className="button-send-register" onSubmit={handleSubmit(onSubmit)}>Enviar</button>

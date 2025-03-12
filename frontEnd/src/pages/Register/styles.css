@@ -7,7 +7,7 @@
     margin-right: 20% ;
     width: 400px;
     height: 730px;
-    background-color: brown;
+    background-color: #6A1E2E;
 }
 
 .form-register-page-section{
@@ -21,10 +21,13 @@
     border-radius: 10px;
 } 
 .button-back-register{
-    margin-top: 20px
+    margin-top: 20px;
+  
 }
 .img-logo-register{
-    margin-top: 250px;
-    height: 100px;
-    margin-left: 40px;
-}
+        margin-top: 200px;
+        margin-left: 50px;
+        height: 40%;
+      
+    }
+

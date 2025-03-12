@@ -13,7 +13,9 @@
     margin-right: 25px;
     margin-bottom: 30px;
 }
+
 .email-input{
+   
     margin-left: 29px;
     width: 300px;
     margin-bottom: 30px;
@@ -38,15 +40,27 @@
     flex-direction: column;
 }
 .button-login{
+    border-radius: 5px;
+    background-color: #6A1E2E;
+    border-style: none;
+    height: 40px;
+    width: 100px;
+    color:beige;  
     margin-bottom: 20px;
     margin-top: 40px;
     margin-left:140px ;
-    background-color: brown;
-    border-radius: 12px;
-    height: 40px;
-    width: 100px;
-    color:beige;
+    cursor: pointer;
 }    
 .redirecionar-cadastro{
     margin-left: 40px;
+    color: #6A1E2E;
+}
+
+.button-login:hover {
+    scale: 1.05;
+    transition: .4s;
+}
+
+.button-login {
+    text-decoration: none;
 }

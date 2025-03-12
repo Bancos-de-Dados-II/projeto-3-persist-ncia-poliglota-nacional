@@ -7,10 +7,10 @@ export function Register(){
         <section className="register-page-section">
             <div className="lateral-page-section">
                 <div className="button-back-register">
-                    <ButtonBack/>
+                    <ButtonBack className="back-button"/>
                 </div>
        
-                <img className="img-logo-register" src="/img/logo.png"></img>
+                <img className="img-logo-register" src="/img/recircular-branca.png"></img>
             </div>
             <FormRegister/>
 

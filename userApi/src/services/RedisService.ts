@@ -9,7 +9,7 @@ export default class RedisService {
     private initClient = async () => {
         if(!this.redisClient) {
             const clientRedis = new ClientRedis();
-            this.redisClient = await clientRedis.getRedisClient();
+         this.redisClient = await clientRedis.getRedisClient();
         }
     }
 

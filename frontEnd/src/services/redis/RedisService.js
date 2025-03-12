@@ -7,7 +7,7 @@ export default class RedisService {
             },
             body: data
         })
-
+        console.log("Qualquer")
         await fetch(request);
     }
 
