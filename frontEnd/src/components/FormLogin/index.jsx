@@ -33,7 +33,7 @@ export default function FormLogin() {
     return (
         <div className="form-login">
             <div className="login-text">
-                <label>Login</label>
+                <label><strong>Login</strong></label>
             </div>
             <div className="form-campos">
                 <form action="#" onSubmit={handleSubmit(onSubmit)}>

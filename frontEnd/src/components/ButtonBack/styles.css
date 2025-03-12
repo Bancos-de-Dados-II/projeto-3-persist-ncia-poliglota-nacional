@@ -1,20 +1,18 @@
-.button-container-back {
-    color: black;
-    padding: 2px 18px;
-    border-radius: 5px;
-    background-color: brown;
-    font-weight: bold;
-    border: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
-    cursor: pointer;
-    transition: .4s;
+.seta-back{
+    height: 40px;
+    margin-top: 4px;
+    margin-left: 8px;
 }
 
-.button-container:hover {
-    scale: 1.05;
+.button-container-back {
+    border-radius: 5px;
+    background-color: #6a1e2e;
+    cursor: pointer;
+    border-style: none;
+}
+
+.button-container-back:hover {
+    scale: 1.09;
     transition: .4s;
 }
 

@@ -3,9 +3,11 @@
     flex-direction: column;
     margin-top: 100px;
     margin-bottom: 85px;
-    width: 400px;
+    width: 380px;
+    height: 520px;
     border-radius: 10px;
     border:1px solid black;
+   
 }
 .email-text{
     margin-top: 60px;
@@ -15,10 +17,9 @@
 }
 
 .email-input{
-   
     margin-left: 29px;
     width: 300px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 .password-text{
     margin-left: 29px;
@@ -31,13 +32,13 @@
     width: 300px;
 }
 .login-text{
-    margin-bottom: 40px;
-    margin-top: 30px;
-    margin-left: 165px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ padding-top: 40px;
 }
 .form-campos{
-    display: flex;
-    flex-direction: column;
+padding-top: 48px;
 }
 .button-login{
     border-radius: 5px;
@@ -47,7 +48,7 @@
     width: 100px;
     color:beige;  
     margin-bottom: 20px;
-    margin-top: 40px;
+    margin-top: 18px;
     margin-left:140px ;
     cursor: pointer;
 }    

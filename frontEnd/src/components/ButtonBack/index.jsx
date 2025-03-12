@@ -6,7 +6,7 @@ export default function ButtonBack() {
     return (
         <Link to={"/"} className="link-button-back">
             <button className={`button-container-back`}>
-                <img src="/img/arrow-back.png" alt="ir" />
+                <img className="seta-back"src="/img/seta.png" alt="ir" />
             </button>
         </Link>
     );
